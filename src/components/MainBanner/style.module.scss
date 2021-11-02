@@ -1,0 +1,101 @@
+$mainWhite: #fff;
+$mainBlue: rgb(105, 145, 199);
+$mainTitleColor: white;
+
+.root {
+    width: 100%;
+    padding: 160px 0 0;
+
+    .title__flex__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Gilroy;
+        font-style: normal;
+        margin-bottom: 25px;
+
+        .title__text {
+            margin: 0 35px;
+            font-size: 20px;
+            font-weight: 600px;
+            color: $mainWhite;
+
+            span {
+                color: $mainBlue;
+            }
+        }
+
+        .title__line {
+            flex-grow: 1;
+            height: 1px;
+            background: $mainBlue;
+        }
+    }
+    .title__flex__med {
+        font-family: RussoOne;
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 100px;
+        line-height: 120%;
+        font-weight: 400;
+        color: $mainTitleColor;
+    }
+    .title__flex__bottom {
+        font-family: Gilroy;
+        margin-bottom: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            text-align: center;
+            color: $mainWhite;
+        }
+        p:first-child {
+            max-width: 650px;
+            margin-bottom: 20px;
+        }
+        p:last-child {
+            max-width: 580px;
+        }
+    }
+}
+
+
+@media (max-width: 420px) {
+    .root {
+        width: 100%;
+        padding: 60px 0 0;
+    
+        .title__flex__top {
+    
+            .title__text {
+                margin: 0;
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+
+        .title__flex__med {
+            margin-bottom: 30px;
+            font-size: 42px;
+        }
+
+        .title__flex__bottom {
+            margin-bottom: 30px;
+
+            p {
+                font-size: 13px;
+            }
+            p:first-child {
+                max-width: 100%;
+                margin-bottom: 10px;
+            }
+            p:last-child {
+                max-width: 100%;
+            }
+        }
+    }
+}

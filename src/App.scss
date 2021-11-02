@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(./fonts/Montserrat/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(./fonts/Montserrat/Montserrat-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(./fonts/Montserrat/Montserrat-Light.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter/Inter-ExtraBold.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter/Inter-Bold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter/Inter-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter/Inter-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter/Inter-Light.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter/Inter-ExtraLight.ttf);
+  font-weight: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.App {
+  background-size: 81%;
+  background: black;
+  overflow-y: hidden;
+
+  .background-dots {
+    background: url('./img/Dots.svg');
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .buttons__row {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 160px;
+
+    .button {
+      cursor: pointer;
+      font-family: Montserrat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 500;
+      width: 320px;
+      height: 100px;
+      margin: 0 25px;
+      border-radius: 50px;
+      transition: .3s;
+    }
+    .button:hover {
+      box-shadow: 0 0 25px #6991c7;
+    }
+    .button:first-child {
+      background: linear-gradient(95.58deg, #a3bded 45.55%, #6991c7 95.55%);
+    }
+    .button:last-child {
+      border: 2px solid #6991c7;
+      color: #6991c7;
+    }
+  }
+}
+
+@media (min-width: 2560px) {
+  .App {
+    .container {
+      max-width: 2500px;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .App {
+    .container {
+      max-width: 1200px;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .App {
+    .container {
+      max-width: 1080px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    .container {
+      max-width: 768px;
+      padding: 0 20px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .App {
+    .container {
+      max-width: 420px;
+    }
+  
+    .buttons__row {
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+  
+      .button {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

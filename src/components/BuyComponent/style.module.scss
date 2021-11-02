@@ -1,0 +1,175 @@
+.root {
+    padding: 60px 0 160px;
+
+    .description {
+        max-width: 500px;
+        font-family: Gilroy;
+        font-size: 30px;
+        font-weight: 500;
+        color: white;
+        margin-bottom: 50px;
+
+        span {
+            font-weight: 700;
+            color: #6991c7;
+        }
+    }
+
+    .info {
+        font-family: Gilroy;
+        font-size: 18px;
+        font-weight: 300;
+        color: white;
+    }
+
+    .price__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .price {
+            font-family: RussoOne;
+            font-size: 253px;
+            font-weight: 400;
+            color: #6991c7;
+        }
+
+        .button__box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .bonus__info {
+                max-width: 420px;
+                font-family: Gilroy;
+                font-size: 30px;
+                font-weight: 500;
+                color: white;
+                margin-bottom: 65px;
+
+                span {
+                    font-size: 40px;
+                    font-weight: 600;
+                    color: #6991c7;
+                }
+            }
+
+            .button {
+                cursor: pointer;
+                font-family: Montserrat;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(95.58deg, #a3bded 45.55%, #6991c7 95.55%);
+                font-size: 18px;
+                font-weight: 500;
+                width: 320px;
+                height: 100px;
+                border-radius: 50px;
+                transition: 0.3s;
+            }
+
+            .button:hover {
+                box-shadow: 0 0 25px #6991c7;
+            }
+        }
+    }
+
+    .priceDesktop {
+        display: block;
+
+        .info {
+            font-family: Gilroy;
+            font-size: 18px;
+            font-weight: 300;
+            color: white;
+
+            span {
+                font-size: 30px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .priceMobile {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .root {
+        padding: 60px 0;
+
+        .description {
+            max-width: 100%;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            font-size: 14px;
+
+            span {
+                font-size: 18px;
+            }
+        }
+
+        .price__box {
+            flex-wrap: wrap;
+
+            .price {
+                font-size: 107px;
+            }
+
+            .button__box {
+                align-items: center;
+                .bonus__info {
+                    max-width: 100%;
+                    font-size: 18px;
+                    margin-bottom: 65px;
+                    padding-left: 70px;
+
+                    span {
+                        font-size: 18px;
+                    }
+                }
+
+                .button {
+                    cursor: pointer;
+                    font-family: Montserrat;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: linear-gradient(95.58deg, #a3bded 45.55%, #6991c7 95.55%);
+                    font-size: 18px;
+                    font-weight: 500;
+                    width: 320px;
+                    height: 100px;
+                    border-radius: 50px;
+                    transition: 0.3s;
+                }
+
+                .button:hover {
+                    box-shadow: 0 0 25px #6991c7;
+                }
+            }
+        }
+
+        .priceDesktop {
+            display: none !important;
+        }
+
+        .priceMobile {
+            display: block;
+            font-family: Gilroy;
+            font-size: 14px;
+            font-weight: 300;
+            color: white;
+
+            span {
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+}

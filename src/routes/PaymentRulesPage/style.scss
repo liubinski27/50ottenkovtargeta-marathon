@@ -1,0 +1,17 @@
+.rules__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .rules__flex {
+        img {
+            width: 100%;
+        }
+    }
+}
